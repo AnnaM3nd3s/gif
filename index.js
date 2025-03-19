@@ -15,3 +15,19 @@ document.getElementById("mysub").onclick = function(){
     document.getElementById("resultado").textContent = result.toFixed(2);
 
 }
+
+document.getElementById("submeter").onclick = function(){
+
+    let x = document.getElementById("porcento").value;
+    x = Number(x);
+
+    let y = document.getElementById("valor").value;
+    y = Number(y);
+
+    let resultado = x/100 * y
+
+    document.getElementById("result").textContent = resultado.toFixed(2);
+
+
+
+}
