@@ -24,7 +24,21 @@ document.getElementById("submeter").onclick = function(){
     let y = document.getElementById("valor").value;
     y = Number(y);
 
-    let resultado = (x/100) * y
+    let resultado = (x/100) * y;
 
     document.getElementById("result").textContent = resultado.toFixed(2);
+}
+
+document.getElementById("sub").onclick = function(){
+
+    let x = document.getElementById("desconto").value;
+    x = Number(x);
+
+    let y = document.getElementById("value").value;
+    y = Number(y);
+
+    let equacao = (1 - x/100) * y;
+
+    document.getElementById("res").textContent = equacao.toFixed(2);
+
 }
