@@ -27,7 +27,4 @@ document.getElementById("submeter").onclick = function(){
     let resultado = (x/100) * y
 
     document.getElementById("result").textContent = resultado.toFixed(2);
-
-
-
 }
